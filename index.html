@@ -13,6 +13,9 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -57,9 +60,9 @@
               <a class="nav-link disabled" aria-disabled="true"></a>
             </li>
             <li class="nav-item px-1 ms-lg-5">
-              <button class="btn btn-outline-dark" type="submit">
-                <i data-feather="sun"></i>
-                <i data-feather="moon" style="display: none"></i>
+              <button class="btn" id="btn-darkMode" type="button">
+                <i id="sunIcon" data-feather="sun"></i>
+                <i id="moonIcon" data-feather="moon" style="display: none"></i>
               </button>
             </li>
           </ul>
@@ -68,7 +71,7 @@
     </nav>
     <!-- NAVBAR End -->
 
-    <section class="hero" style="height: 4000px" id="hero">
+    <section class="hero" id="hero">
       Hello World!<br />
     </section>
 
@@ -80,5 +83,8 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- JavaScript -->
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
