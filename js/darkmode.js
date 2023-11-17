@@ -17,4 +17,8 @@ document.getElementById("btn-darkMode").addEventListener("click", function () {
   sunIcon.style.display = sunIcon.style.display === "none" ? "inline" : "none";
   moonIcon.style.display =
     moonIcon.style.display === "none" ? "inline" : "none";
+
+  const lottieMode = document.getElementById("lottie");
+  lottieMode.classList.toggle("bg-dark");
+  lottieMode.classList.toggle("bg-warning");
 });
