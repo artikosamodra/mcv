@@ -22,3 +22,15 @@ document.getElementById("btn-darkMode").addEventListener("click", function () {
   lottieMode.classList.toggle("bg-dark");
   lottieMode.classList.toggle("bg-warning");
 });
+
+
+// Test
+// Seleksi elemen tombol dan elemen yang tersembunyi
+// const seeMoreButton = document.getElementById('seeMoreButton');
+// const hiddenContent = document.getElementById('hiddenContent');
+
+// // Tambahkan event listener untuk mengatur perilaku ketika tombol diklik
+// seeMoreButton.addEventListener('click', function () {
+//   // Toggle tampilan elemen tersembunyi
+//   hiddenContent.style.display = hiddenContent.style.display === 'none' ? 'block' : 'none';
+// });
