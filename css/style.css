@@ -2,3 +2,56 @@
 body {
   transition: background-color 1.2s ease, color 1.2s ease;
 }
+
+.my-logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.animasi {
+  animation: moveText 3s linear infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, rgb(226, 135, 16),rgb(54, 79, 235), rgb(247, 68, 24));
+  -webkit-background-clip: text;
+  color: transparent;
+  /* font-size: 2em; Ukuran teks dapat disesuaikan */
+  font-weight: bold;
+}
+
+.bg-gradient {
+  background-color: linear-gradient(to right, #fd6944, rgb(22, 22, 197));
+  color: rgb(66, 45, 45); /* Warna teks untuk kontras dengan latar belakang */
+  padding: 20px;
+}
+
+/* .hover{
+
+}
+
+.hover:hover{
+  color: blue;
+  transform: scaleX(0.5);
+  transition: 0.7s linear;
+} */
+
+/* .under-border{
+  border-bottom: 2px solid;
+} */
+
+.time-year{
+  
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px); /* Ubah nilai ini sesuai kebutuhan */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
