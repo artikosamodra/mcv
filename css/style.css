@@ -12,13 +12,13 @@ body {
   animation: moveText 3s linear infinite;
 }
 
-.text-gradient {
+/* .text-gradient {
   background: linear-gradient(to right, rgb(226, 135, 16),rgb(54, 79, 235), rgb(247, 68, 24));
   -webkit-background-clip: text;
   color: transparent;
-  /* font-size: 2em; Ukuran teks dapat disesuaikan */
+  font-size: 2em; Ukuran teks dapat disesuaikan
   font-weight: bold;
-}
+} */
 
 .bg-gradient {
   background-color: linear-gradient(to right, #fd6944, rgb(22, 22, 197));
@@ -40,9 +40,9 @@ body {
   border-bottom: 2px solid;
 } */
 
-.time-year{
+/* .time-year{
   
-}
+} */
 
 @keyframes moveText {
   0% {
