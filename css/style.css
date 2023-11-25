@@ -55,3 +55,31 @@ body {
     transform: translateX(0);
   }
 }
+
+.pagination {
+  margin-top: 20px;
+}
+
+.card-container {
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.bg-grad {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 150, 0, 1),
+    rgba(255, 215, 0, 1)
+  );
+}
+
+.carousel-img {
+  object-fit: cover;
+  height: 30rem;
+  width: 100%;
+}
