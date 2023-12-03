@@ -1,85 +1,120 @@
+:root {
+  --alpha: rgb(255, 0, 0);
+  --betha: rgb(255, 115, 0);
+  --gamma: rgb(255, 251, 0);
+  --delta: rgb(72, 255, 0);
+  --theta: rgb(0, 255, 213);
+  --lambda: rgb(0, 42, 255);
+  --omicron: rgb(123, 0, 255);
+  --sigma: rgb(255, 0, 200);
+  --omega: rgb(255, 0, 0);
+
+  --textst: ;
+  --textnd: ;
+  --textrd: ;
+}
+
 .navbar,
 body {
   transition: background-color 1.2s ease, color 1.2s ease;
-}
-
-.my-logo {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
 }
 
 .animasi {
   animation: moveText 3s linear infinite;
 }
 
-/* .text-gradient {
-  background: linear-gradient(to right, rgb(226, 135, 16),rgb(54, 79, 235), rgb(247, 68, 24));
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 2em; Ukuran teks dapat disesuaikan
-  font-weight: bold;
-} */
-
-.bg-gradient {
-  background-color: linear-gradient(to right, #fd6944, rgb(22, 22, 197));
-  color: rgb(66, 45, 45); /* Warna teks untuk kontras dengan latar belakang */
-  padding: 20px;
+.bg-img {
+  background-image: url("../assets/img/bg-project.jpg");
+  background-size: cover;
 }
 
-/* .hover{
-
-}
-
-.hover:hover{
-  color: blue;
-  transform: scaleX(0.5);
-  transition: 0.7s linear;
-} */
-
-/* .under-border{
-  border-bottom: 2px solid;
-} */
-
-/* .time-year{
-  
-} */
-
-@keyframes moveText {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(100px); /* Ubah nilai ini sesuai kebutuhan */
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.pagination {
-  margin-top: 20px;
-}
-
-.card-container {
-  margin-top: 20px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.bg-grad {
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
-    to bottom,
-    rgba(255, 150, 0, 1),
-    rgba(255, 215, 0, 1)
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.9)
   );
 }
 
-.carousel-img {
-  object-fit: cover;
-  height: 30rem;
+/* Make Text Color Gradient : START*/
+.text-gradient {
+  background: linear-gradient(45deg, rgb(32, 70, 238), #1db1eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Make Text Color Gradient : END*/
+
+/* Make Neon Button : START*/
+.neon span {
+  font-family: "Spartan";
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
   width: 100%;
+  text-align: center;
+}
+.neon {
+  position: relative;
+  margin: 250px auto 0;
+  /* width: 500px;
+	height: 250px;
+	background: linear-gradient(0deg, #1d1e22, #42444d); */
+}
+.neon:before,
+.neon:after {
+  content: "";
+  /* border-radius: 50%; */
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    var(--alpha),
+    var(--betha),
+    var(--gamma),
+    var(--delta),
+    var(--theta),
+    var(--lambda),
+    var(--sigma),
+    var(--omega),
+    var(--omicron)
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: glow 50s linear infinite;
+}
+.neon:after {
+  filter: blur(30px);
+}
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 500% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* Make Neon Button : End */
+
+.btnfx:hover{
+  background-color: gray;
+  font-weight: 700;
+}
+
+.img-project{
+  max-height: 8rem;
 }
