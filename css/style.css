@@ -155,11 +155,14 @@ body {
     0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
+footer {
+  font-size: 1.1rem;
+}
+
 footer a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.1rem;
 }
 
 footer a:hover {
