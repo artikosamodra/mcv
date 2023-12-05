@@ -79,14 +79,10 @@ body {
   background: linear-gradient(
     45deg,
     var(--alpha),
-    var(--betha),
     var(--gamma),
-    var(--delta),
     var(--theta),
     var(--lambda),
     var(--sigma),
-    var(--omega),
-    var(--omicron)
   );
   background-size: 400%;
   width: calc(100% + 4px);
@@ -118,3 +114,43 @@ body {
 .img-project{
   max-height: 8rem;
 }
+
+.bg-neon{
+  position: relative;
+  margin: 0px auto 0;
+}
+
+.bg-neon:before,
+.bg-neon:after {
+  content: "";
+  /* border-radius: 50%; */
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    var(--alpha),
+    var(--betha),
+    var(--gamma),
+    var(--delta),
+    var(--theta),
+    var(--lambda),
+    var(--sigma),
+    var(--omega),
+    var(--omicron)
+  );
+  background-size:400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: glow 20s linear infinite;
+  filter: blur(0px);
+}
+
+.neon-text {
+  font-size: 2em; /* Sesuaikan dengan ukuran teks yang diinginkan */
+  font-family: 'Arial', sans-serif; /* Sesuaikan dengan jenis font yang diinginkan */
+  color: #fff; /* Warna teks dasar */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
