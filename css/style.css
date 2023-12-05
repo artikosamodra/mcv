@@ -82,7 +82,7 @@ body {
     var(--gamma),
     var(--theta),
     var(--lambda),
-    var(--sigma),
+    var(--sigma)
   );
   background-size: 400%;
   width: calc(100% + 4px);
@@ -106,16 +106,16 @@ body {
 }
 /* Make Neon Button : End */
 
-.btnfx:hover{
+.btnfx:hover {
   background-color: gray;
   font-weight: 700;
 }
 
-.img-project{
+.img-project {
   max-height: 8rem;
 }
 
-.bg-neon{
+.bg-neon {
   position: relative;
   margin: 0px auto 0;
 }
@@ -139,18 +139,34 @@ body {
     var(--omega),
     var(--omicron)
   );
-  background-size:400%;
+  background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   z-index: -1;
-  animation: glow 20s linear infinite;
+  animation: glow 1s linear infinite;
   filter: blur(0px);
 }
 
 .neon-text {
   font-size: 2em; /* Sesuaikan dengan ukuran teks yang diinginkan */
-  font-family: 'Arial', sans-serif; /* Sesuaikan dengan jenis font yang diinginkan */
+  font-family: "Arial", sans-serif; /* Sesuaikan dengan jenis font yang diinginkan */
   color: #fff; /* Warna teks dasar */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+footer a:hover {
+  color: rgb(0, 123, 255);
+}
+
+footer span {
+  color: white;
+  font-weight: bold;
+}

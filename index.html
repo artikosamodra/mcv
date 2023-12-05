@@ -56,14 +56,14 @@
               <a class="nav-link hover" href="#">Home</a>
             </li>
             <li class="nav-item px-0 px-lg-2">
-              <a class="nav-link" href="#about">Experience</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item px-0 px-lg-2">
               <a class="nav-link" href="#project">Project</a>
             </li>
-            <li class="nav-item px-0 px-lg-2">
+            <!-- <li class="nav-item px-0 px-lg-2">
               <a class="nav-link" href="#expertise">Expertise</a>
-            </li>
+            </li> -->
             <li class="nav-item px-0 px-lg-2">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -96,11 +96,10 @@
               software development, especially in Backend. Outside of work, he
               enjoys building mutually beneficial relationships.
             </p>
-            <button
-              class="btn btn-primary btn-lg px-4 my-3 rounded-5 fw-semibold my-5"
-            >
-              About Me
-            </button>
+
+            <a href="mailto:artikosamudra.com">
+              <button type="button" class="btn btn-primary btn-lg px-4 my-3 rounded-5 fw-semibold my-5">Contact Me</button>
+            </a>
           </div>
 
           <!-- <div class="col-0 col-md-0 col-lg-1"></div> -->
@@ -116,7 +115,7 @@
     <!-- HERO Section End -->
 
     <!-- EXPERIENCE SECTION Start -->
-    <section class="about m-5 pt-5" id="about">
+    <section class="about m-5 pt-5" id="experience">
       <h1 class="text-center py-5 fw-bold">Experience</h1>
       <div class="about-area m-0 m-lg-5">
 
@@ -406,32 +405,25 @@
               <!-- Technology Icons-->
               <h3 class="my-3">Featured technologies used</h3>
               <div class="row">
-                <div class="col-3 col-md-2">
-                  <img
-                    src="assets/img/icon-skill/bootstrap.png"
-                    alt="Boostrap Icon"
-                    class="img-thumbnail img-fluid p-1 p-md-3 p-lg-4"
-                  />
-                </div>
-                <div class="col-3 col-md-2">
+                <div class="col-3 col-sm-2 col-lg-1">
                   <img
                     src="assets/img/icon-skill/html-5.png"
                     alt="HTML Icon"
-                    class="img-thumbnail p-1 p-md-3 p-lg-4"
+                    class="img-thumbnail p-1"
                   />
                 </div>
-                <div class="col-3 col-md-2">
+                <div class="col-3 col-sm-2 col-lg-1">
                   <img
                     src="assets/img/icon-skill/css-3.png"
                     alt="CSS Icon"
-                    class="img-thumbnail p-1 p-md-3 p-lg-4"
+                    class="img-thumbnail p-1"
                   />
                 </div>
-                <div class="col-3 col-md-2">
+                <div class="col-3 col-sm-2 col-lg-1">
                   <img
                     src="assets/img/icon-skill/js.png"
                     alt="JavaScript Icon"
-                    class="img-thumbnail p-1 p-md-3 p-lg-4"
+                    class="img-thumbnail p-1"
                   />
                 </div>
               </div>
@@ -459,34 +451,34 @@
         <h1 class="my-5 fw-bold text-center">Contact</h1>
         <div class="row mx-0 mx-lg-5 d-flex justify-content-start">
           <div class="col-6 col-md-3 mb-2">
-            <div class="card bg-neon">
+            <div class="card">
               <img src="assets/img/social/linkedin.png" class="card-img-top img-fluid px-lg-5" alt="Linkedin">
               <div class="card-body">
-                <a href="#" class="btn btn-primary justify-content-center d-flex">Linkedin</a>
+                <a href="https://www.linkedin.com/in/artiko/" target="_blank" class="btn btn-primary justify-content-center d-flex">Linkedin</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <div class="card bg-neon">
+            <div class="card">
               <img src="assets/img/social/github.png" class="card-img-top img-fluid px-lg-5" alt="...">
               <div class="card-body">
-                <a href="#" class="btn btn-primary justify-content-center d-flex">GitHub</a>
+                <a href="https://github.com/artikosamodra" target="_blank" class="btn btn-primary justify-content-center d-flex">GitHub</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <div class="card bg-neon">
+            <div class="card">
               <img src="assets/img/social/instagram.png" class="card-img-top img-fluid px-lg-5" alt="...">
               <div class="card-body">
-                <a href="#" class="btn btn-primary justify-content-center d-flex">Instagram</a>
+                <a href="https://instagram.com/artikosamodra" target="_blank" class="btn btn-primary justify-content-center d-flex">Instagram</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <div class="card bg-neon">
+            <div class="card">
               <img src="assets/img/social/telegram.png" class="card-img-top img-fluid px-lg-5" alt="...">
               <div class="card-body">
-                <a href="#" class="btn btn-primary justify-content-center d-flex">Telegram</a>
+                <a href="" class="btn btn-primary justify-content-center d-flex">Telegram</a>
               </div>
             </div>
           </div>
@@ -498,7 +490,25 @@
 
     <!-- FOOTER START -->
     <footer>
-      <div class="footer-area bg-secondary pt-5 pb-2">
+
+      <div class="footer-area container-fluid bg-black mt-5 pt-5">
+        <div class="footer-social d-flex justify-content-center py-2">
+          <a href="#contact" class="mx-3"><i data-feather="linkedin"></i></a>
+          <a href="#contact" class="mx-3"><i data-feather="github"></i></a>
+          <a href="#contact" class="mx-3"><i data-feather="instagram"></i></a>
+          <a href="#contact" class="mx-3"><i data-feather="send"></i></a>
+        </div>
+        <div class="footer-menu d-flex justify-content-center py-2">
+          <a href="#" class="mx-2 mx-lg-3">Home</a> <span>|</span>
+          <a href="#experience" class="mx-2 mx-lg-3">Experience</a> <span>|</span>
+          <a href="#project" class="mx-2 mx-lg-3">Project</a> <span>|</span>
+          <a href="#contact" class="mx-2 mx-lg-3">Contact</a>
+        </div>
+        <div class="footer-create d-flex justify-content-center text-light pt-2 pb-5">
+          All rights reserved &copy; <a href="" class="me-2">Artiko Fajar Samodra</a> 2023
+        </div>
+      </div>
+      <!-- <div class="footer pt-5 pb-2">
         <div class="row mx-5">
           <div class="col-6">
             <h3>Artiko Fajar Samodra</h3>
@@ -510,7 +520,7 @@
             <a href="#" class="text-dark"><i data-feather="github"></i></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
     <!-- FOOTER END -->
 
